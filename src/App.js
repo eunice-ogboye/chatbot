@@ -1,16 +1,18 @@
 import React from "react";
-import Login from "./Login";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import SignUp from "./SignUp";
-import Home from "./Home";
+import Login from "./component/Login";
+import Users from "./component/Users";
+import Chat from "./component/Chat";
+
+
 function App() {
   return (
 
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/users" element={<Users />} />
+        <Route path="/chat/:username" component={Chat} />
       </Routes>
     </BrowserRouter>
 
