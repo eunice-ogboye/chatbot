@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/users" element={<Users />} />
-        <Route path="/chat/:username" component={Chat} />
+        <Route path="/chat" element={<Chat />} />
       </Routes>
     </BrowserRouter>
 

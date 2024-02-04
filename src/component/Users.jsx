@@ -21,7 +21,7 @@ function Users() {
           <ul>
             {users.map((user) => (
               <li key={user.id}>
-                <Link to={`/chat/${user.username}`} className="link-secondary link-underline-light">{user.name}</Link>
+                <Link to="/chat" className="link-secondary link-underline-light">{user.name}</Link>
               </li>
             ))}
           </ul>
